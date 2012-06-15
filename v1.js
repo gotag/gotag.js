@@ -8,7 +8,7 @@
 
 require(["jquery", "lib/jquery.fancybox.pack", "lib/humane.min"], function($) {
   /********************* CONFIG ***************************/
-  var DOMAIN = "http://localhost:3000/"
+  var DOMAIN = "http://gotag.in/"
   var DEFAULT_HEIGHT = "90%";
   var DEFAULT_WIDTH = "70%";
   /******************* End Config ***********************/
