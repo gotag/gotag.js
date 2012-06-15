@@ -165,7 +165,7 @@ a.thumbnail:hover{border-color:#0088cc;-webkit-box-shadow:0 1px 4px rgba(0, 105,
 }
 
 .thumbnail{
-	height:420px;
+	height:350px;
 	overflow:hidden;
 	position:relative;
 }
