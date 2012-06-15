@@ -14,9 +14,9 @@ require(["jquery", "lib/jquery.fancybox.pack", "lib/humane.min"], function($) {
   /******************* End Config ***********************/
   
   $(function() {
-    loadCss("v1.css");
-    loadCss("lib/jquery.fancybox.css");
-    loadCss("lib/humane-original.css");
+    loadCss("http://developers.gotag.in/gotag.js/v1.css");
+    loadCss("http://developers.gotag.in/gotag.js/lib/jquery.fancybox.css");
+    loadCss("http://developers.gotag.in/gotag.js/lib/humane-original.css");
     
     // Auto close modal if iframe is same as parent
     //parent.$.colorbox.close();

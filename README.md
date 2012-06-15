@@ -4,7 +4,7 @@ GoTag.js
 Including GoTag.js
 
 ```html
-<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+<script data-main="http://developers.gotag.in/gotag.js/v1.js" src="http://developers.gotag.in/gotag.js/require-jquery.js"></script>
 ```
 
 Add this script tag to your page to get started with GoTag.js
