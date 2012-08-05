@@ -6,7 +6,7 @@
  * =========================================================== 
  */
 
-GoTag(function() {
+Gotag(function() {
   (function($){
     console.log("gotag.js starting");
     var gotag_elements = $('[class*="gotag-event-"]');
@@ -55,7 +55,7 @@ GoTag(function() {
 
     var default_title = "Buy Tickets";
 
-    GoTag.load_tickets = function(selector, event_id) {
+    Gotag.load_tickets = function(selector, event_id) {
       var iframe_name = 'gotag-iframe-' + event_id;
       if ($('iframe[name=' + iframe_name + ']').length > 0) return;
 
@@ -90,7 +90,7 @@ GoTag(function() {
       klass = gotag_event_class(this);
       if (klass && (m = klass.match(/^gotag-event-(\d+)$/))) {
         var event_id = m[1];
-        GoTag.load_tickets("." + klass, event_id);
+        Gotag.load_tickets("." + klass, event_id);
       }
     });
 
@@ -103,5 +103,5 @@ GoTag(function() {
       $(iframe).css('display','block');
       $(lightbox).css('display','block');
     }
-  })(GoTag);
+  })(Gotag);
 });
