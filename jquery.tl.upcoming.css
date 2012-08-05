@@ -37,7 +37,7 @@
 
 /* Header
 ------------------------------------------------------------------------*/
-.tl-upcoming-header-label {
+.tl-upcoming-header-label h2 {
 	background: #F8D54A;
 	border: 2px solid #F8D54A;
 	border-top-left-radius: 7px;
