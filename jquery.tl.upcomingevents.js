@@ -242,6 +242,7 @@
 								'<td class="tl-upcoming-item-label tl-upcoming-event-label">' +
 									'<div class="tl-upcoming-event-title">' + eventObj.name + ' at ' + eventObj.venue.name + '</div>' +
 									'<div class="tl-upcoming-event-dates">' + this.formatDisplayDates(eventObj.starts_at, eventObj.ends_at) + '</div>' +
+									'<a class="gotag-event-26391" href="#">Buy Tickets</a>' +
 								'</td>' +
 							'</tr>');
         
