@@ -76,6 +76,11 @@
 	border-top: 0 none !important;
 }
 
+.tl-upcoming-event-flyer {
+	float: left;
+	padding-right: 5px;
+}
+
 .tl-upcoming-item-label {
 	color: #3081BC !important;
 	font-size: 14px !important;
