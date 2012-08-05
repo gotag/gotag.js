@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GoTag Events Widget</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<link href="jquery.tl.upcoming.css" rel="stylesheet" type="text/css" />
+		<script src="jquery-1.5.1.js" type="text/javascript"></script>
+		<script src="jquery.tl.upcomingevents.js" type="text/javascript"></script>
+		<script>
+			$(function(){
+				
+				var loadEvents = function(){
+					$("#upcoming-events").empty();
+					
+					$('#upcoming-events').upcomingEvents({ 
+						pageSize: $('#perpage').val(),
+						orgSlug: $('#orgslug').val(),
+						apiUrl: $('#endpoint').val(),
+						apiKey: $('#apikey').val()
+					 });
+				};
+				
+				$('#loadevents').submit(function(evt){
+					evt.preventDefault();
+					loadEvents();
+				});
+				
+				loadEvents();
+				
+			});
+		</script>
+	</head>
+	<body>
+		<form id="loadevents">
+			<table border="0" cellpadding="5" style="margin: 0 0 20px 0;">
+				<tr>
+					<td>Organization Slug: </td>
+					<td><input id="orgslug" type="text" value="puppies" style="width: 300px;" /></td>
+				</tr>
+				<tr>
+					<td>Page Size:</td>
+					<td><input id="perpage" type="text" value="5" style="width: 300px;" /></td>
+				</tr>
+				<tr>
+					<td>API Endpoint:</td>
+					<td><input id="endpoint" type="text" value="http://lvh.me:3000/" style="width: 300px;" /></td>
+				</tr>
+				<tr>
+					<td>API Key:</td>
+					<td><input id="apikey" type="text" value="PUT_API_KEY_HERE" style="width: 300px;" /></td>
+				</tr>
+				<tr>
+					<th></th>
+					<td><button type="submit">Load Events</button></td>
+				</tr>
+			</table>
+		</form>
+		<div id="upcoming-events"></div>
+	</body>
+</html>
