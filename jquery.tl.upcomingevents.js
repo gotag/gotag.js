@@ -257,7 +257,7 @@
 	// default options
 	$.fn.upcomingEvents.defaults = {
 		pageSize: 5,
-		apiUrl: "https://staging.gotag.in/"
+		apiUrl: "https://gotag.in/"
 	};
 
 })(jQuery);
