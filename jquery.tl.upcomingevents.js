@@ -175,9 +175,9 @@
 			},
 
 			createButton: function(content, additionalClass, clickFunction){
-				var button = $('<td class="tl-upcoming-item-control"><a class="gotag-event-26391" href="#"><span class="tl-upcoming-button '+ additionalClass +'">'+ content +'</span></a></td>');
-				//var button = $('<td class="tl-upcoming-item-control"><span class="tl-upcoming-button '+ additionalClass +'">'+ content +'</span></td>');
-				//button.click(clickFunction);
+				//var button = $('<td class="tl-upcoming-item-control"><a class="gotag-event-26391" href="#"><span class="tl-upcoming-button '+ additionalClass +'">'+ content +'</span></a></td>');
+				var button = $('<td class="tl-upcoming-item-control"><span class="tl-upcoming-button '+ additionalClass +'">'+ content +'</span></td>');
+				button.click(clickFunction);
 				return button;
 			},
 
