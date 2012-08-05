@@ -247,7 +247,7 @@
 							'</tr>');
         
 				eventEl.append(this.createButton('Buy Tickets', 'tl-upcoming-button-buy', function() {
-					window.open(this.options.apiUrl + "/events/" + eventObj.id);
+					window.open(self.options.apiUrl + "events/" + eventObj.id);
 				}));
 				
 				return eventEl;

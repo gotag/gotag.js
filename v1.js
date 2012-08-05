@@ -25,9 +25,9 @@
 
 
 Gotag(function() {
-  (function($){
-    console.log("ihrgiueh");
+  $(function() {
     var gotag_elements = $('[class*="gotag-event-"]');
+    console.log(gotag_elements);
     function gotag_event_class(element) {
       return $.grep($(element).attr('class').split(/\s+/), function(e, i) { return e.match(/^gotag-event-(\d+)$/)})[0];
     }
