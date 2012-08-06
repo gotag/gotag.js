@@ -240,7 +240,7 @@
 			  var self = this,
 				eventEl = $('<tr class="tl-upcoming-item tl-upcoming-event">' +
 								'<td class="tl-upcoming-item-label tl-upcoming-event-label">' +
-								  '<div class="tl-upcoming-event-flyer"><img src="' + eventObj.flyer.small.url + '" width="60" /></div>' +
+								  '<div class="tl-upcoming-event-flyer"><img src="' + eventObj.flyer.medium.url + '" width="60" /></div>' +
 									'<div class="tl-upcoming-event-title">' + eventObj.name + ' at ' + eventObj.venue.name + '</div>' +
 									'<div class="tl-upcoming-event-dates">' + this.formatDisplayDates(eventObj.starts_at, eventObj.ends_at) + '</div>' +
 								'</td>' +
