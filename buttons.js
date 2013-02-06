@@ -3277,7 +3277,7 @@
             return
         }
         e("head").append(e('<link charset="utf-8" type="text/css" rel="stylesheet" href="http://developers.gotag.in/gotag.js/buttons.css" />'));
-        var i = e('    <div id="gotag" class="gotag-lightbox" style="display: none;">      <div class="gotag-wrapper">        <div class="gotag-container">          <div class="gotag-header">            <a class="gotag-close" href="#"></a>            <span id="gotag-title">Register for Event</span> <em>powered by <a href="https://gotag.in?ref=embed" target="_blank">Gotag</a></em>          </div>          <div class="gotag-body">          </div>        </div>      </div>    </div>  ');
+        var i = e('<div id="gotag" class="gotag-lightbox" style="display: none;"><div class="gotag-wrapper"><div class="gotag-container"><div class="gotag-body"> </div></div></div></div>');
         e("#gotag").length ? i = e("#gotag") : i.appendTo("body");
         var s = "Register for Event";
         Gotag.load_tickets = function (t, n) {
