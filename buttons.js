@@ -3277,17 +3277,17 @@
             return
         }
         e("head").append(e('<link charset="utf-8" type="text/css" rel="stylesheet" href="http://developers.gotag.in/gotag.js/buttons.css" />'));
-        var i = e('    <div id="gotag" class="gotag-lightbox" style="display: none;">      <div class="gotag-wrapper">        <div class="gotag-container">          <div class="gotag-header">            <a class="gotag-close" href="#"></a>            <span id="gotag-title">Register for Event</span> <em>powered by <a href="https://gotag.in?ref=embed" target="_blank">Gotag</a></em>          </div>          <div class="gotag-body">          </div>        </div>      </div>    </div>  ');
+        var i = e('<div id="gotag" class="gotag-lightbox" style="display: none;"> <div class="gotag-wrapper"><div class="gotag-container"><div class="gotag-body"><a class="gotag-close" href="#"></a></div></div></div></div>');
         e("#gotag").length ? i = e("#gotag") : i.appendTo("body");
         var s = "Register for Event";
         Gotag.load_tickets = function (t, n) {
             var r = "gotag-iframe-" + n;
             if (e("iframe[name=" + r + "]").length > 0) return;
             var o = "https://gotag.in/events/" + n + "/iframe?return_url=" + window.location.toString(),
-                u = e('<iframe name="' + r + '" frameborder="0" hspace="0" scrolling="auto" style="display: none;" width="760" height="490" src="' + o + '"></iframe>').appendTo("div.gotag-body");
+                u = e('<iframe name="' + r + '" frameborder="0" hspace="0" scrolling="auto" style="display: none;" width="100%" height="100%" src="' + o + '"></iframe>').appendTo("div.gotag-body");
             e(t).click(function () {
                 var t, n;
-                return (t = e(this).attr("title")) ? n = "Register for " + (t.length > 30 ? t.substring(0, 25) + "&#8230;" : t) : n = s, e("#gotag-title")[0].innerHTML = n, e("iframe[name^=gotag-iframe-]").css("display", "none"), e(u).css("display", "block"), e(i).css("display", "block"), !1
+                return (t = e(this).attr("title")) ? n = "Register for " + (t.length > 30 ? t.substring(0, 25) + "&#8230;" : t) : n = s, e("iframe[name^=gotag-iframe-]").css("display", "none"), e(u).css("display", "block"), e(i).css("display", "block"), !1
             }), e(".gotag-close").click(function () {
                 return e(i).css("display", "none"), e("#gotag-title")[0].innerHTML = s, e(u).css("display", "none"), e("iframe[name=" + r + "]")[0].src = o, !1
             })
@@ -3303,7 +3303,7 @@
             var o = document.location.hash.substring(1).split(";", 2),
                 u = "gotag-iframe-" + o[0],
                 a = e("iframe[name=" + u + "]")[0];
-            a.src = "https://gotag.in/events/" + o[0] + "/purchases/" + o[1] + "/iframe?return_url=" + window.location.toString(), e(a).css("display", "block"), e(i).css("display", "block")
+            a.src = "https://gotag.in/events/" + o[0] + "/purchases/" + o[1] + "/?return_url=" + window.location.toString(), e(a).css("display", "block"), e(i).css("display", "block")
         }
     })(Gotag)
 });
