@@ -12,7 +12,8 @@
  * Released under the MIT, BSD, and GPL Licenses.
  *
  * Date: Thu Mar 31 15:28:23 2011 -0400
- */ (function (e, t) {
+ */ 
+(function (e, t) {
     function n(e) {
         return A.isWindow(e) ? e : e.nodeType === 9 ? e.defaultView || e.parentWindow : !1
     }
@@ -3282,7 +3283,7 @@
         Gotag.load_tickets = function (t, n) {
             var r = "gotag-iframe-" + n;
             if (e("iframe[name=" + r + "]").length > 0) return;
-            var o = "https://gotag.in/events/" + n + "/embed?return_url=" + window.location.toString(),
+            var o = "https://gotag.in/events/" + n + "/iframe?return_url=" + window.location.toString(),
                 u = e('<iframe name="' + r + '" frameborder="0" hspace="0" scrolling="auto" style="display: none;" width="760" height="490" src="' + o + '"></iframe>').appendTo("div.gotag-body");
             e(t).click(function () {
                 var t, n;
