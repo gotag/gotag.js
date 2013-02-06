@@ -89,7 +89,7 @@
     color: #5e5e5e;
 }
 
-#gotag .gotag-container .gotag-close {
+#gotag .gotag-body .gotag-close {
     position: absolute;
     right: 20px;
     top: 21px;
@@ -99,7 +99,7 @@
     background: #939090 url("http://developers.gotag.in/gotag.js/buttons/btn-close.png") 0px 0px no-repeat;
 }
 
-#gotag .gotag-container .gotag-close:hover {
+#gotag .gotag-body .gotag-close:hover {
   background: #939090 url("http://developers.gotag.in/gotag.js/buttons/btn-close.png") 0px -20px no-repeat;
 }
 
