@@ -3263,6 +3263,12 @@
         }
         var t = e('[class*="gotag-event-"]'),
             r = navigator.userAgent.indexOf("MSIE 6") >= 0 ? !0 : !1;
+        var t = e('[class*="gotag-event-"]'),
+            r = navigator.userAgent.indexOf("MSIE 7") >= 0 ? !0 : !1;
+        var t = e('[class*="gotag-event-"]'),
+            r = navigator.userAgent.indexOf("MSIE 8") >= 0 ? !0 : !1;
+        var t = e('[class*="gotag-event-"]'),
+            r = navigator.userAgent.indexOf("MSIE 9") >= 0 ? !0 : !1;
         if (r) {
             t.each(function (t) {
                 var r, i;
